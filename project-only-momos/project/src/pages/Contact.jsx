@@ -3,6 +3,7 @@ import { Container, Row, Col, Form, Button, Card } from 'react-bootstrap';
 import HeroSection from '../components/HeroSection';
 import SectionTitle from '../components/SectionTitle';
 import { MapPin, Phone, Mail, Clock, MessageSquare, Send } from 'lucide-react';
+import contactmomo from '../images/contact-momo.jpeg'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -57,7 +58,7 @@ const Contact = () => {
       <HeroSection
         title="Contact Us"
         subtitle="We'd love to hear from you. Reach out with any questions or to make a reservation."
-        backgroundImage="https://images.pexels.com/photos/6646017/pexels-photo-6646017.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        backgroundImage= {contactmomo}
       />
 
       {/* Contact Info Section */}

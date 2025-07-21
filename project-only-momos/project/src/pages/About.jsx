@@ -3,6 +3,8 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 import HeroSection from '../components/HeroSection';
 import SectionTitle from '../components/SectionTitle';
 import { Users, Award, History } from 'lucide-react';
+import aboutShop from '../images/our-momo-shop.png'
+import momosoup from '../images/Momo_soup-noodle.jpg'
 
 const About = () => {
   const teamMembers = [
@@ -34,7 +36,7 @@ const About = () => {
       <HeroSection
         title="Our Story"
         subtitle="Learn about our journey, our team, and our passion for authentic Himalayan dumplings"
-        backgroundImage="https://images.pexels.com/photos/6646351/pexels-photo-6646351.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        backgroundImage= {momosoup}
       />
 
       {/* Our Story Section */}
@@ -43,7 +45,7 @@ const About = () => {
           <Row className="align-items-center">
             <Col lg={6} className="mb-4 mb-lg-0">
               <img 
-                src="https://images.pexels.com/photos/7363665/pexels-photo-7363665.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                src= {aboutShop} 
                 alt="Only Momos Restaurant" 
                 className="img-fluid rounded shadow-lg"
               />
@@ -52,17 +54,15 @@ const About = () => {
               <div className="ps-lg-4">
                 <h2 className="mb-4">The Only Momos Story</h2>
                 <p className="lead mb-4">
-                  From a small family kitchen in Nepal to your neighborhood.
+                  Come visit us and enjoy Villupuram’s tastiest, freshly handcrafted momos!
                 </p>
                 <p className="mb-4">
-                  Only Momos began with a simple mission: to bring the authentic taste of Himalayan momos to food lovers everywhere. Our founder, Anish Sharma, grew up watching his grandmother prepare these delicious dumplings for family gatherings in Nepal.
+                  Located in the heart of Villupuram, Only Momos opened its doors in 2023, quickly becoming a favorite for those seeking freshly made, authentic-style momos. Every momo is prepared daily using the finest ingredients, ensuring unbeatable taste and quality for every customer.
                 </p>
                 <p className="mb-4">
-                  After moving to the United States, Anish found himself longing for the taste of home. He began making momos for friends and family, who quickly fell in love with these flavorful dumplings. Encouraged by their enthusiasm, he decided to share his family's recipes with a wider audience.
+                  At Only Momos, we’re passionate about delivering a true taste experience—serving soft, juicy dumplings filled with delicious flavors and made with genuine care. Whether you’re craving a quick snack or planning to share with friends and family, our menu offers something for everyone.
                 </p>
-                <p>
-                  In 2018, Only Momos opened its doors, offering handcrafted dumplings made fresh daily using traditional techniques and the finest ingredients. Today, we continue to honor those family recipes while creating new and exciting flavors that celebrate the art of momo-making.
-                </p>
+                
               </div>
             </Col>
           </Row>
