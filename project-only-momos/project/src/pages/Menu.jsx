@@ -6,7 +6,7 @@ import MenuItem from '../components/MenuItem';
 import checkenStearm from '../images/checken-momo.avif'
 import mixvegSt from '../images/mixed-veg.jpeg'
 import pannerSt from '../images/panner-momo.webp'
-// import mushSt from '../images/Mushroom_momo.JPG'
+import mushroommomo from '../images/mushroom-momo.png'
 import fishSt from '../images/fish-momo.jfif'
 import prawnSt from '../images/prawn-momo.jfif'
 import momocollection from '../images/momo-collection.jpeg'
@@ -71,9 +71,9 @@ const Menu = () => {
     {
       id: 6,
       category: 'steamed',
-      image: "https://images.pexels.com/photos/674574/pexels-photo-674574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      title: "Cheese Momos",
-      description: "Steamed momos filled with a delicious mix of cheese, corn, and mild spices.",
+      image: 'https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/992f44ea-c1d6-4491-84be-b84edd1e7e3a.png',
+      title: "Mushroom Steam Momos",
+      description: "Our freshly steamed mushroom momos—juicy dumplings bursting with savory mushroom filling, served hot and delicious!",
       price: "$9.99",
       isVegetarian: true
     },
@@ -134,7 +134,7 @@ const Menu = () => {
       id: 12,
       category: 'steamed',
       image: prawnSt,
-      title: "Fish Steam Momos",
+      title: "Prawn Steam Momos",
       description: "Steamed dumplings filled with a mix of fresh vegetables, garlic, and ginger.",
       price: "$7.99",
       isVegetarian: false
