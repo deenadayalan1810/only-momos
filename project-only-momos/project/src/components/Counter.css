@@ -1,0 +1,40 @@
+.box-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 2px 2px 3px 5px #ffd403;
+  width: 180px;
+  height: 180px;
+  transform: rotate(45deg); /* Rotate the box */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 20px;
+}
+
+.box-inner {
+  transform: rotate(-45deg); /* Rotate content back */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counter {
+  font-size: 32px;
+  color: #dd3807;
+  font-weight: 700;
+}
+
+p {
+  margin: 10px 0 0 0;
+  font-size: 16px;
+}
