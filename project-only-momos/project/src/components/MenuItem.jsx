@@ -10,6 +10,7 @@ const MenuItem = ({
   isSpicy = false,
   isNew = false,
   isCold = false,
+  isNonveg = false
 }) => {
   return (
     <Card className="menu-item h-100">
@@ -32,6 +33,9 @@ const MenuItem = ({
           )}
           {isCold && (
             <Badge bg="primary" text="dark" className="me-2">Hot & Sweet</Badge>
+          )}
+          {isNonveg && (
+            <Badge bg="danger" text="dark" className="me-2">Non Veg</Badge>
           )}
         </div>
       </Card.Body>
