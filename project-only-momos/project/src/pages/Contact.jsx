@@ -115,7 +115,7 @@ const Contact = () => {
                   For reservations, please call us or fill out the form. We recommend making reservations 
                   at least 48 hours in advance for weekends and special events.
                 </p>
-                <Button variant="primary" href="tel:1234567890" className="d-inline-flex align-items-center">
+                <Button variant="primary" href="tel:95516 28855" className="d-inline-flex align-items-center">
                   <Phone size={18} className="me-2" /> Call For Reservations
                 </Button>
               </div>

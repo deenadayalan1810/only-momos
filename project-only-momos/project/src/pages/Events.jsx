@@ -4,68 +4,71 @@ import HeroSection from '../components/HeroSection';
 import SectionTitle from '../components/SectionTitle';
 import EventCard from '../components/EventCard';
 import { Calendar, Clock, Users } from 'lucide-react';
+import unlimitMomo from '../images/unlimited-momos.png'
+import newyearGift from '../images/new-year-gift.png'
+import weekendOffers from '../images/weekend-offers.png'
 
 const Events = () => {
-  const upcomingEvents = [
-    {
-      id: 1,
-      image: "https://images.pexels.com/photos/2306281/pexels-photo-2306281.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      title: "Momo Making Workshop",
-      date: "June 15, 2025 | 3:00 PM - 5:00 PM",
-      description: "Learn how to make traditional momos from our head chef. All ingredients and tools provided.",
-      link: "#"
-    },
-    {
-      id: 2,
-      image: "https://images.pexels.com/photos/1105325/pexels-photo-1105325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      title: "Himalayan Food Festival",
-      date: "July 8-10, 2025 | 12:00 PM - 9:00 PM",
-      description: "Join us for a three-day celebration of Himalayan cuisine featuring special menu items and cultural performances.",
-      link: "#"
-    },
-    {
-      id: 3,
-      image: "https://images.pexels.com/photos/1267696/pexels-photo-1267696.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      title: "Charity Dinner",
-      date: "August 5, 2025 | 7:00 PM - 10:00 PM",
-      description: "A special dinner event with proceeds going to support education programs in Nepal. Featuring a multi-course tasting menu.",
-      link: "#"
-    }
-  ];
+  // const upcomingEvents = [
+  //   {
+  //     id: 1,
+  //     image: "https://images.pexels.com/photos/2306281/pexels-photo-2306281.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  //     title: "Momo Making Workshop",
+  //     date: "June 15, 2025 | 3:00 PM - 5:00 PM",
+  //     description: "Learn how to make traditional momos from our head chef. All ingredients and tools provided.",
+  //     link: "#"
+  //   },
+  //   {
+  //     id: 2,
+  //     image: "https://images.pexels.com/photos/1105325/pexels-photo-1105325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  //     title: "Himalayan Food Festival",
+  //     date: "July 8-10, 2025 | 12:00 PM - 9:00 PM",
+  //     description: "Join us for a three-day celebration of Himalayan cuisine featuring special menu items and cultural performances.",
+  //     link: "#"
+  //   },
+  //   {
+  //     id: 3,
+  //     image: "https://images.pexels.com/photos/1267696/pexels-photo-1267696.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  //     title: "Charity Dinner",
+  //     date: "August 5, 2025 | 7:00 PM - 10:00 PM",
+  //     description: "A special dinner event with proceeds going to support education programs in Nepal. Featuring a multi-course tasting menu.",
+  //     link: "#"
+  //   }
+  // ];
 
   const privateEventSpaces = [
     {
       id: 1,
-      name: "Main Dining Room",
-      capacity: "Up to 40 guests",
-      description: "Our beautiful main dining room can be reserved for private events during non-peak hours.",
-      image: "https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      name: "Unlimited Momos Treat!",
+      capacity: "Unlimited momos for shop opening",
+      description:"Get ready to satisfy your cravings! Enjoy unlimited varieties of steaming hot momos – veg & non-veg – served fresh and flavorful.",
+      image: unlimitMomo
     },
     {
       id: 2,
-      name: "Private Dining Room",
-      capacity: "Up to 20 guests",
-      description: "An intimate space perfect for smaller gatherings, business meetings, or family celebrations.",
-      image: "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      name: "2025 New Year Special Offer! ",
+      capacity: "Celebrate the New Year with us and stand a chance to win exciting gifts!",
+      description: "We’re selecting 3 lucky winners to receive:🎁 Smart Watch | 🎧 Air Buds | 💾 Memory Card",
+      image: newyearGift
     },
     {
       id: 3,
-      name: "Outdoor Patio",
-      capacity: "Up to 30 guests",
-      description: "Our charming outdoor patio is available for seasonal events, weather permitting.",
-      image: "https://images.pexels.com/photos/1058277/pexels-photo-1058277.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      name: "Every Weekend Offers",
+      capacity: "Offers in Burger,Milkshake,Mojitos",
+      description: "Don't miss the fun – bring your friends and family for a momo-filled weekend!",
+      image: weekendOffers
     }
   ];
 
   return (
     <>
       <HeroSection
-        title="Events & Private Dining"
+        title="Events & Offers"
         subtitle="Join us for special events or host your own private gathering"
         backgroundImage="https://images.pexels.com/photos/433452/pexels-photo-433452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
       />
 
-      {/* Upcoming Events Section */}
+      {/* Upcoming Events Section 
       <section className="page-section">
         <Container>
           <SectionTitle 
@@ -88,7 +91,7 @@ const Events = () => {
         </Container>
       </section>
 
-      {/* Private Events Section */}
+         Private Events Section */}
       <section className="page-section bg-light-yellow">
         <Container>
           <SectionTitle 
@@ -103,7 +106,7 @@ const Events = () => {
                     variant="top" 
                     src={space.image} 
                     alt={space.name} 
-                    style={{ height: '220px', objectFit: 'cover' }}
+                    style={{ height: '220px', objectFit: 'fill' }}
                   />
                   <Card.Body>
                     <Card.Title>{space.name}</Card.Title>
@@ -118,7 +121,7 @@ const Events = () => {
             ))}
           </Row>
 
-          <Row className="justify-content-center">
+          {/* <Row className="justify-content-center">
             <Col lg={8}>
               <Card className="border-0 shadow">
                 <Card.Body className="p-4 p-md-5">
@@ -199,11 +202,11 @@ const Events = () => {
                 </Card.Body>
               </Card>
             </Col>
-          </Row>
+          </Row> */}
         </Container>
       </section>
 
-      {/* Catering Section */}
+      {/* Catering Section 
       <section className="page-section">
         <Container>
           <SectionTitle 
@@ -242,7 +245,7 @@ const Events = () => {
             </Col>
           </Row>
         </Container>
-      </section>
+      </section> */}
     </>
   );
 };

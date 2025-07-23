@@ -4,8 +4,17 @@ import './Hero.css';
 import slider1 from '../images/slider1.webp';
 import slider2 from '../images/slider2.avif';
 import slider3 from '../images/newslider3.jpeg';
+import slider4 from '../images/burger-slider.png';
+import slider5 from '../images/banner-slider5.png';
 
 const slides = [
+  {
+    title: 'Momos Burger Delight',
+    subtitle: 'Juicy momos packed inside soft burger buns for a unique fusion bite!',
+    backgroundImage: slider4,
+    buttonText: 'View Our Menu',
+    buttonLink: '/menu',
+  },
   {
     title: 'Experience the Taste of Authentic Momos',
     subtitle: 'Hand-crafted Himalayan dumplings made fresh daily using traditional recipes',
@@ -24,6 +33,13 @@ const slides = [
     title: 'Made with Loves',
     subtitle: 'Every momo is prepared with care, just like home.',
     backgroundImage: slider2,
+    buttonText: 'Visit Us',
+    buttonLink: '/contact',
+  },
+  {
+    title: 'Minty Mojito Bliss & Creamy Milkshake Magic',
+    subtitle: 'Cool, refreshing mojitos bursting with mint and citrusy zest / Thick, chilled milkshakes blended with rich flavors for the perfect sip.',
+    backgroundImage: slider5,
     buttonText: 'Visit Us',
     buttonLink: '/contact',
   },
